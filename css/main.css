@@ -14817,8 +14817,10 @@ body {
 }
 .item-logo{
   position: relative;
+
   padding: 10px;
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  border-radius: 10px;
 }
 .section--screens .owl-carousel .owl-item img{
   width: 100%;
@@ -14830,8 +14832,9 @@ body {
 }
 .item-logo a:hover img{
  
-  z-index: 999;
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
 
   
 }
